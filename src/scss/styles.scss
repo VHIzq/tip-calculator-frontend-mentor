@@ -1,0 +1,5 @@
+@use 'config';
+
+body {
+  background-color: config.$Very-dark-cyan;
+}
