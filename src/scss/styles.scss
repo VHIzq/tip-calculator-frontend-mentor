@@ -1,5 +1,49 @@
 @use 'config';
+@use 'mixins';
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-family: config.$font-family;
+}
 
 body {
-  background-color: config.$Very-dark-cyan;
+  background-color: config.$White;
+  @include mixins.centerItems;
+  height: 100vh;
+  overflow-x: hidden;
+  
+  main {
+    width: 375px;
+
+    header{
+      h1{
+        @include mixins.fontStyle;
+        color: config.$Very-dark-cyan;
+        letter-spacing: 6px;
+        line-height: 30px;
+        background-color: config.$Light-grayish-cyan;
+      }
+    }
+    
+    .selection {
+      border-radius: 10px;
+
+      form {
+        
+        label{
+          @include mixins.fontLabel
+        }
+
+        input {
+          width: 80%;
+        }
+        
+      }
+    }
+  }
 }

@@ -1,0 +1,19 @@
+@use 'config';
+
+@mixin fontStyle {
+  text-align: center;
+  font-size: config.$size-inputs;
+  font-weight: config.$weights;
+}
+
+@mixin fontLabel {
+  color: config.$Very-dark-cyan;
+  font-weight: 200;
+  font-size: 15px;
+  letter-spacing: 2px;
+}
+
+@mixin centerItems {
+  display: flex;
+  justify-content: center;
+}

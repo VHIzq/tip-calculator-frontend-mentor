@@ -1,8 +1,46 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter&display=swap");
 /* Mobile: 375px
  Desktop: 1440px */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-family: "Inter", sans-serif;
+}
+
 body {
-  background-color: hsl(183deg, 100%, 15%);
+  background-color: hsl(0deg, 0%, 100%);
+  display: flex;
+  justify-content: center;
+  height: 100vh;
+  overflow-x: hidden;
+}
+body main {
+  width: 375px;
+}
+body main header h1 {
+  text-align: center;
+  font-size: 24px;
+  font-weight: 700;
+  color: hsl(183deg, 100%, 15%);
+  letter-spacing: 6px;
+  line-height: 30px;
+  background-color: hsl(185deg, 41%, 84%);
+}
+body main .selection {
+  border-radius: 10px;
+}
+body main .selection form label {
+  color: hsl(183deg, 100%, 15%);
+  font-weight: 200;
+  font-size: 15px;
+  letter-spacing: 2px;
+}
+body main .selection form input {
+  width: 80%;
 }
 
 /*# sourceMappingURL=styles.css.map */
